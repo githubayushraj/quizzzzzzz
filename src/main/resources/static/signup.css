@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-container button:hover {
+    background-color: #45a049;
+}
+
+.signup-container p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-container a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 8px; /* Adds space between the checkbox and the label */
+}
+
+.checkbox-container label {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.checkbox-container a {
+    color: #5cb85c; /* Color for the link */
+    text-decoration: none;
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline;
+}
+
+.error{
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.success{
+    color: #45a049;
+    text-align: center;
+}

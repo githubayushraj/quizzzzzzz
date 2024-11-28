@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 Quiz Completed! 🎉</h1>
+        </div>
+        <div class="result">
+            <h3>Your Score: <span id="quiz-result"></span></h3>
+        </div>
+        <div class="note">
+            <p>Great job! Keep practicing and aim for perfection!</p>
+        </div>
+        <button id="retry-button" style="display:none;" onclick="retakeQuiz()">Retry Quiz</button>
+    </div>
+    <script src="result.js" defer></script>
+</body>
+</html>

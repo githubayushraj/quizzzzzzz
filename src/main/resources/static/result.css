@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff; /* Changed to white */
+    color: #333; /* Adjusted text color for better readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: #f9f9f9; /* Light gray for the card */
+    color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #4facfe;
+}
+
+.result {
+    margin: 20px 0;
+}
+
+.result h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.result span {
+    color: #4facfe;
+}
+
+.note p {
+    font-size: 1rem;
+    color: #555; /* Slightly darker text for note */
+}
+
+#retry-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4facfe;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    display: none; /* Initially hidden */
+}
+
+#retry-button:hover {
+    background: #00f2fe;
+}

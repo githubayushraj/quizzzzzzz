@@ -1,0 +1,139 @@
+/* Base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Container styling */
+div {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Quiz info styling */
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.timer,
+.question-number {
+    color: #007BFF;
+}
+
+/* Question styling */
+.question {
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Options styling */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation buttons */
+.next-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back-button {
+    background-color: #6c757d;
+    margin-right: 10px;
+}
+
+#back-button:hover {
+    background-color: #5a6268;
+}
+
+#next-button {
+    background-color: #28a745;
+}
+
+#next-button:hover {
+    background-color: #218838;
+}
+
+/* Disabled button styling */
+.next-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Timer styling */
+#timer {
+    font-size: 16px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    div {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .next-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .options button {
+        padding: 10px;
+        font-size: 15px;
+    }
+}

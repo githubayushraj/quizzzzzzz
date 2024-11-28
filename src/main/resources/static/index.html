@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!--Landing page-->
+    <section class="landing-page">
+        <div class="wrapper">
+            <div class="flex-content">
+                <h1 class="vaccation-heading">Welcome To Master Quize</h1>
+                <a href="#quiz-packages" class="btn">Start Now</a> <!--afer click it scroll to reach at quize page-->
+            </div>
+        </div>
+    </section>
+
+    <!--Navingation bar-->
+    <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#quiz-packages">Quize</a>
+        <a href="#performer">Top Performers</a>
+        <a href="#notes">Notes</a>
+    </nav>
+
+    <!--Quize Section-->
+    <section class="quize-package-section" id="quiz-packages">
+        <div class="heading">
+            <h1>Coding Quiz</h1>
+            <h3>Enhance your knowledge and take your skills to the next level by joining our engaging and interactive quiz! Whether you're looking to test your current understanding or dive deeper into new concepts, this quiz is designed to offer a fun and challenging experience for learners of all levels. Each question is carefully crafted to stimulate your thinking, encouraging you to explore a wide range of topics and reinforce your existing knowledge.</h3>
+            <div class="package-wrapper">
+                <div class="card">
+                    <img src="java_image.png" class="card-img-top" alt="">
+                    <p class="card-heading">Java</p>
+                    <p class="card-content">Boost your knowledge with this engaging quiz designed to challenge your understanding and enhance your learning.</p>
+                    <p class="card-heading">500₹</p>
+                    <button class="btn" onclick="startQuiz('java')">Take Quiz</button>
+                </div>
+                <div class="card">
+                    <img src="python.png" class="card-img-top" alt="">
+                    <p class="card-heading">Python</p>
+                    <p class="card-content">Boost your knowledge with this engaging quiz designed to challenge your understanding and enhance your learning.</p>
+                    <p class="card-heading">500₹</p>
+                    <button class="btn" onclick="startQuiz('python')">Take Quiz</button>
+                </div>
+                <div class="card">
+                    <img src="js.jpeg" class="card-img-top" alt="">
+                    <p class="card-heading">Java Script</p>
+                    <p class="card-content">Boost your knowledge with this engaging quiz designed to challenge your understanding and enhance your learning.</p>
+                    <p class="card-heading">500₹</p>
+                    <button class="btn" onclick="startQuiz('js')">Take Quiz</button>
+                </div>
+                <div class="card">
+                    <img src="cpp.png" class="card-img-top" alt="">
+                    <p class="card-heading">C++</p>
+                    <p class="card-content">Boost your knowledge with this engaging quiz designed to challenge your understanding and enhance your learning.</p>
+                    <p class="card-heading">500₹</p>
+                    <button class="btn" onclick="startQuiz('cpp')">Take Quiz</button>
+                </div>
+                <div class="card">
+                    <img src="devops.jpeg" class="card-img-top" alt="">
+                    <p class="card-heading">Dev-Ops</p>
+                    <p class="card-content">Boost your knowledge with this engaging quiz designed to challenge your understanding and enhance your learning.</p>
+                    <p class="card-heading">500₹</p>
+                    <button class="btn" onclick="startQuiz('devops')">Take Quiz</button>
+                </div>
+                <div class="card">
+                    <img src="springboot.png" class="card-img-top" alt="">
+                    <p class="card-heading">Spring Boot</p>
+                    <p class="card-content">Boost your knowledge with this engaging quiz designed to challenge your understanding and enhance your learning.</p>
+                    <p class="card-heading">500₹</p>
+                    <button class="btn" onclick="startQuiz('spring')">Take Quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Top Performer section-->
+    <section class="performer-quiz-section" id="performer">
+        <div class="heading">
+            <h1>Top Performer</h1>
+            <h3 class="quiz-text">Our top performers are the brightest minds in our organization, consistently demonstrating exceptional skills, dedication, and innovation. They are not only high achievers but also inspire those around them with their unwavering commitment to excellence. These individuals set the standard for performance, pushing boundaries and driving results through their strategic thinking and problem-solving abilities.</h3>
+            <div class="performer-card">
+                <div class="toper-card">
+                    <img src="Ayush.jpeg" class="card-img-top" alt="Ayush">
+                    <div class="card-body">
+                        <p class="card-name">Name: Ayush</p>
+                        <p class="card-email">Email: ayush@gmail.com</p>
+                    </div>
+                    
+                </div>
+                <div class="toper-card">
+                    <img src="Ayush.jpeg" class="card-img-top" alt="Ayush">
+                    <div class="card-body">
+                        <p class="card-name">Name: Ayush</p>
+                        <p class="card-email">Email: ayush@gmail.com</p>
+                    </div>
+                </div>
+                <div class="toper-card">
+                    <img src="Ayush.jpeg" class="card-img-top" alt="Ayush">
+                    <div class="card-body">
+                        <p class="card-name">Name: Ayush</p>
+                        <p class="card-email">Email: ayush@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notes Section -->
+     <section class="notes-package" id="notes">
+        <div class="heading">
+            <h1 class="notes-heading">Notes</h1>
+            <h3>Get ahead in your studies with notes designed for success. Our "Topper's Notes" are crafted by top-performing students who have mastered the material and streamlined complex ideas into easy-to-follow, insightful resources. These notes offer more than just information—they share proven tips, unique perspectives, and effective study techniques that can help you achieve your goals faster. Dive in, save time, and absorb what really matters. Whether you’re aiming to understand the fundamentals or perfect your preparation, these notes will boost your confidence and knowledge to new levels.</h3>
+            <p class="card-content"></p>
+            <div class="package-wrapper">
+                <a href="https://www.tutorialspoint.com/java/java_tutorial.pdf" target="_blank" style="text-decoration: none;">
+                    <div class="notes-card">
+                        <img src="java_image.png" class="card-img-top" alt="">
+                        <p class="card-name">Java</p>
+                    </div>
+                </a>
+                
+                <div class="notes-card">
+                    <img src="python.png" class="card-img-top" alt="">
+                    <p class="card-name">python</p>
+                </div>
+                <div class="notes-card">
+                    <img src="js.jpeg" class="card-img-top" alt="">
+                    <p class="card-name">Java Script</p>
+                </div>
+                <div class="notes-card">
+                    <img src="cpp.png" class="card-img-top" alt="">
+                    <p class="card-name">Cpp</p>
+                </div>
+                <div class="notes-card">
+                    <img src="devops.jpeg" class="card-img-top" alt="">
+                    <p class="card-name">DevOps</p>
+                </div>
+                <div class="notes-card">
+                    <img src="springboot.png" class="card-img-top" alt="">
+                    <p class="card-name">Spring Boot</p>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- fo0ter section -->
+      <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 ayush. All rights reserved.</p>
+            <div class="social-icon">
+                <a href="#" class="social-icon">facbook</a>
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="https://instagram.com/ayush__raj_502" class="social-icon">Intagram</a>
+                <a href="#" class="social-icon">LinkedIn</a>
+            </div>
+            <p class="footer-creator">website handle by Ayush</p>
+        </div>
+      </footer>
+    </body>
+    <script src="index.js" defer></script>
+</html>

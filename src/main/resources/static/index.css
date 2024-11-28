@@ -1,0 +1,374 @@
+/* {
+    background: url(index_image.jpg);
+    height: 100vh;
+    background-size: cover;
+    color: white;
+} */
+ /* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .landing-page {
+        flex-direction: column; /* Stack content vertically */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .landing-page .vaccation-heading {
+        font-size: 150%; /* Reduce heading size for mobile */
+        text-align: center; /* Center align for mobile */
+    }
+
+    .main-nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .main-nav a {
+        padding: 8px 15px; /* Adjust padding for links */
+        font-size: 16px; /* Reduce font size for mobile */
+    }
+
+    .heading h1 {
+        font-size: 30px; /* Reduce h1 size for mobile */
+    }
+
+    .heading h3 {
+        margin-left: 20px; /* Reduce margins for h3 */
+        margin-right: 20px; /* Reduce margins for h3 */
+        font-size: 1.2em; /* Adjust font size */
+    }
+
+    .package-wrapper {
+        padding: 0 10px; /* Adjust padding for package wrapper */
+        display: grid; /* Keep grid layout */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust min width for cards */
+    }
+
+    .card {
+        width: auto; /* Allow card width to adjust */
+        margin: 5px; /* Reduce margin for cards */
+    }
+
+    .toper-card {
+        width: auto; /* Allow toper card width to adjust */
+    }
+
+    .quiz-text {
+        font-size: 16px; /* Adjust font size for text */
+        margin: 0 10px 20px; /* Adjust margins for quiz text */
+    }
+
+    .notes-card {
+        width: auto; /* Allow notes card width to adjust */
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.landing-page {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), /* Shadow effect */
+    url('index_image.jpg'); /* Your background image */    background-size: cover; /* Scale the image to cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    position: relative;
+}
+.landing-page .wrapper{
+    background-color: rgba(0, 0, 0., 0.5);
+    height: 100%;
+}
+.landing-page .flex-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.landing-page .vaccation-heading{
+    font-size: 250%;
+    color: rgb(255, 255, 255);
+}
+.btn{
+    color:white;
+    text-decoration: none;
+    background-color:   rgb(47, 201, 196);
+    padding: 10px 20px;
+    border-radius: 5px;
+
+
+}
+.btn:hover{
+    background-color: rgb(26, 97, 103);
+}
+
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+    padding: 20px;
+    box-shadow: 0 0 10 black;
+    position: sticky;
+    top: 0;
+}
+
+
+.main-nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.main-nav a:hover{
+    color: aliceblue;
+    background-color: rgb(26, 97, 103);
+}
+
+.quize-package-section {
+    display: flex;
+    justify-content: center;
+}
+
+.heading h1 {
+    text-align: center;
+    font-size: 45px;
+    color: #7b7979;
+}
+
+.heading h3 {
+    font-size: 1.5em; /* Adjust font size as needed */
+    font-weight: bold; /* Make it stand out */
+    color: #4e4d4d; /* Color for readability */
+    margin: 10; /* Remove default margins */
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px 0; /* Padding for spacing */
+    text-align: justify; /* Justify text for alignment */
+}
+
+
+h3:hover {
+    color: #0a0a0a; /* Change color on hover for interaction */
+}
+
+
+.package-wrapper {
+    padding: 0px 200px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 0px; /* Space between the cards */
+}
+
+.card {
+    width: 200px; /* Set a fixed width for the card */
+    border: 1px solid #ccc; /* Card border */
+    border-radius: 10px; /* Rounded corners */
+    object-fit: contain;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden; /* Prevent overflow */
+    margin: 10px; /* Margin around the card */
+    text-align: center; /* Center text in the card */
+    margin-top: 20px; /* Space above the card */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.package-wrapper .card-img-top {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make image circular */
+    margin: 15px auto; /* Center image */
+    display: block;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+
+.card img {
+    object-fit: cover;
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block display to prevent gaps */
+    object-fit: cover; /* Ensure the entire image fits within the card */
+}
+
+.card-heading {
+    margin: 8px 0; /* Space around the heading */
+    font-size: 1.2em; /* Increase heading size */
+    text-align: center; /* Center the heading */
+}
+
+.card-content {
+    margin: 8px 0; /* Space around the content */
+    text-align: center; /* Center the content */
+}
+
+.btn {
+    display: block; /* Block display for button */
+    margin: 10px auto; /* Center the button */
+    padding: 10px 15px; /* Padding for the button */
+    background: #3edeec; /* Netflix-like red */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.btn:hover {
+    background: #056371; /* Darken button on hover */
+}
+
+
+/* Top Performer Section */
+.performer-quiz-section {
+    padding: 50px 0;
+    background-color: #f9f9f9; /* Light background */
+    text-align: center; /* Center-align content */
+}
+
+.quiz-heading {
+    font-size: 45px;
+    color: #a1a1a1;
+    margin-bottom: 20px;
+}
+
+.quiz-text {
+    font-size: 20px;
+    color: black;
+    margin: 0 30px 40px;
+    line-height: 1.6; /* Improve readability */
+}
+
+.performer-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+}
+
+.toper-card {
+    width: 220px; /* Fixed width */
+    background-color: #fff; /* White background for cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Scale effect on hover */
+}
+
+.toper-card:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make image circular */
+    margin: 15px auto; /* Center image */
+    display: block;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-name, .card-email {
+    margin: 8px 0; /* Space between text elements */
+    font-size: 1em;
+    color: #333;
+}
+
+.card-name {
+    font-weight: bold;
+}
+
+.card-email {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.notes-card {
+    justify-content: center;
+    width: 200px; /* Set a fixed width for the card */
+    border: 1px solid #ccc; /* Card border */
+    border-radius: 10px; /* Rounded corners */
+    object-fit: contain;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden; /* Prevent overflow */
+    margin: 10px; /* Margin around the card */
+    text-align: center; /* Center text in the card */
+    margin-top: 20px; /* Space above the card */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.notes-card img:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center; /* Center align text */
+    position: relative; /* Position relative for any absolute elements */
+}
+
+.footer-content {
+    max-width: 1200px; /* Maximum width of the content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.footer p {
+    margin: 10px 0; /* Margin for paragraphs */
+}
+
+.social-icons {
+    margin: 10px 0; /* Margin for social icons */
+}
+
+.social-icon {
+    color: white; /* White color for links */
+    text-decoration: none; /* No underline */
+    margin: 0 10px; /* Spacing between icons */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.social-icon:hover {
+    color: #3edeec; /* Change color on hover */
+}
+
+.footer-creator {
+    margin-top: 10px; /* Space above the creator's name */
+    font-size: 14px; /* Font size for creator's name */
+    color: #ccc; /* Lighter color for distinction */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .footer-content {
+        padding: 0 10px; /* Reduce horizontal padding */
+    }
+
+    .social-icon {
+        margin: 0 5px; /* Reduce spacing between icons */
+        font-size: 12px; /* Smaller font size */
+    }
+}

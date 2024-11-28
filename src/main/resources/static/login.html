@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <div class="error" id="errorMsg"></div>
+        <div class="success" id="successMsg"></div>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Your password" autocomplete="current-password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // prevent form from refreshing page
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            // Clear all previous messages
+            document.getElementById("errorMsg").textContent = "";
+            document.getElementById("successMsg").textContent = "";
+
+            // Check validation
+            if (email && password) {
+                const loginData = {
+                    email: email,
+                    password: password
+                };
+
+                fetch("http://localhost:8080/api/student/login", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(loginData) // convert the data to json
+                })
+                .then(response => { // Fixed variable name from Response to response
+                    if (!response.ok) {
+                        throw new Error("Invalid email or password");
+                    }
+                    return response.json(); // Fixed variable name from reponse to response
+                })
+                .then(data => {
+                    document.getElementById("successMsg").textContent = "Welcome!";
+                    document.getElementById("loginForm").reset();
+                    
+                    setTimeout(() => {
+                        window.location.href = "index.html";
+                    }, 1000);
+                })
+                .catch(error => {
+                    document.getElementById("errorMsg").textContent = error.message;
+                });
+            } else {
+                document.getElementById("errorMsg").textContent = "All fields are required...";
+            }
+        });
+    </script>
+</body>
+</html>
